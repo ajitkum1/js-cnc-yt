@@ -1,5 +1,5 @@
 // number => 2 to power of 53
-// bigint  -- jsed in facebook/redit
+// bigint  -- used in facebook/redit
 // string = "RS"
 // boolean = true/false
 // null => standalone value
