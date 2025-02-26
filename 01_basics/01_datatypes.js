@@ -53,4 +53,49 @@ const myFunction= function(){
     console.log("Hello World!")
 }
 
-console.log(typeof myFunction) // object function
+console.log(typeof myFunction) // object 
+
+
+/******************************************************************************** */
+/* Memory -- is of 2 types 1. Stack and Heap
+
+ 1. Stack: (used in Primitive data-types)
+      here you will get a copy of variable you created
+
+ 2. Heap: (used in Non-Primitive data-types)
+    here you will get a reference  of original value. 
+    If you do any change in reference value,the original value also change. 
+
+
+*/
+
+// STACK
+
+let myFruit = "Apple";
+
+let myLunch = myFruit;
+
+console.log(myFruit)
+console.log(myLunch)
+//************** */
+let myFruit1 = "Apple";
+
+let myLunch1 = myFruit;
+    myLunch1 = "Orange"; 
+
+console.log(myFruit1)
+console.log(myLunch1) // here the reference value was changed, but original value remain same.
+
+// HEAP
+
+let userOne = {
+    email: "abc@gmail.com",
+    pwd: "abc@abc"
+}
+
+let userTwo=userOne
+console.table([userOne,userTwo])
+
+ userTwo.email="bbb@nb.com"
+
+console.table([userOne,userTwo])
