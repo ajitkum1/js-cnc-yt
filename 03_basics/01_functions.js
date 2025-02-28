@@ -40,6 +40,7 @@ function loginUserMsg1(username){
 const usrd = loginUserMsg1()
 console.log(usrd)
 
+console.log("##########################################")
 
 function loginUserMsg1(username="sam"){
     if(username === undefined){
@@ -49,5 +50,51 @@ function loginUserMsg1(username="sam"){
     return `${username} just logged in `
 }
 
-const usrd1 = loginUserMsg1("Amul")
+const usrd1 = loginUserMsg1("Amul") // overwrite the default value (Sam)
 console.log(usrd1)
+
+console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+// ... --> This is called rest / spread operator
+
+function calculatecartPrice(...num1){
+    return num1
+}
+
+console.log(calculatecartPrice(200,300,400)) //[ 200, 300, 400 ]
+
+
+function calculatecartPrice1(val1,val2, ...num1){
+    return num1
+}
+
+console.log(calculatecartPrice1(200,300,4000,3000)) // [ 4000, 3000 ]
+
+console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+// How to pass object in functions
+
+const usrt = {
+    username: "RAMA",
+    price: 200
+
+}
+
+function handleObject(anyobject){
+
+    console.log(`UserName is ${anyobject.username}  and the price is ${anyobject.price}`)
+
+}
+handleObject(usrt)
+handleObject({
+    username: "Ajit",
+    price:10
+})
+
+// passing Array
+const myNewArray = [22,33,44,55,66,77]
+
+function returnedSecondValue(getArray){
+    return getArray[1]
+}
+console.log(returnedSecondValue(myNewArray))
+console.log(returnedSecondValue([100,900,200,300]))
+
