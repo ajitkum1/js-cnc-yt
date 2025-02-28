@@ -22,11 +22,11 @@ const real_another_array = anotherArray.flat(Infinity) // this will give output 
 console.log(real_another_array)
 
 
-console.log(Array.isArray("Hitesh")) // false
-console.log(Array.from("Hitesh")) //  [ 'H', 'i', 't', 'e', 's', 'h' ]
-console.log(Array.from({name: "Hitesh"})) // []
+console.log(Array.isArray("Hitesh")) // false --asking
+console.log(Array.from("Hitesh")) //  [ 'H', 'i', 't', 'e', 's', 'h' ] -- covert to Array
+console.log(Array.from({name: "Hitesh"})) // [] here need to tell convert array of keys or values
 
 let score =100
 let score1 = 200
 let scotre2 = 300
-console.log(Array.of(score,score1,scotre2)) // [ 100, 200, 300 ]
+console.log(Array.of(score,score1,score2)) // [ 100, 200, 300 ]
